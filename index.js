@@ -9,4 +9,9 @@ const db = require("./data/db.js"); // Common JS
 
 server.use(express.json());
 
+// alright, let's see if our friend is alive.
+server.get("/", (req, res) => {
+  res.send("Okay, server is alive.");
+});
+
 server.listen(8008, () => console.log("server up on 8008 - I'm home."));

@@ -15,7 +15,10 @@ exports.up = function(knex, Promise) {
       .integer("project_id")
       .unsigned()
       .references("id")
-      .inTable("projects");
+      .inTable("projects")
+      .notNullable();
+    // a notes column, to give us additional information
+    tbl.text("notes");
     // a flag to tell us whether or not something is complete!
 
     tbl.boolean("complete").notNullable();
