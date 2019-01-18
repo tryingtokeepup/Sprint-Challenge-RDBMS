@@ -29,9 +29,20 @@ This will be akin to the Web API that you built in the last sprint, only this ti
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 1. Explain the difference between `RDBMS` and `SQL`.
+   RDBMS, which stands for Relational DataBase Management Systems, is by far the most popular database management system globally, regardless of how much hate might be thrown its way. The relational part is simply a nod towards the mathamatical idea of tabling data.
+
+SQL, or structured query language, is the language we use to manage databases, communicate with them, and overall make them work. Almost all RDBMS support SQL, which makes this combination of technologies the de facto core techs one must learn to begin to work with databases, which is why we are spending an agonizing month learning how to work with it. Cool beans.
+
 1. Why do tables need a `primary key`?
+
+Tables need a primary key because without one, how can we figure out one "Mark Carpenter" from another "Mark Carpenter"? We need something unique between them or we will never know which one to give a raise to, or give a bus pass to, or whatever. A unique id, a unique SOMETHING, is what we use as a primary key. At times, all we need to give them a interatable number that will not be repeat (like #1, #2, and so on).
+
 1. What is the name given to a table column that references the primary key on another table.
+   That would be the `foreign key`. With this, we can have something that points to another table that has a `primary key`. Make sure make the `foreign key` a unique key for one to one relationships! lol.
+
 1. What do we need in order to have a _many to many_ relationship between two tables.
+
+Ooh, slightly trickier. For this, we need a THIRD table that holds a bunch of foreign keys that point to a `primary key` in the other corresponding tables. Nifty. I need more time to play around with this concept, but it seems very powerful, and a great analog to other engineering systems that I have to break down in my side projects.
 
 ## Minimum Viable Product
 
