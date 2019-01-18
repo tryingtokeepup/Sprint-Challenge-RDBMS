@@ -10,7 +10,7 @@ exports.up = function(knex, Promise) {
     // description column
     tbl.text("description").notNullable();
     // a flag to tell us whether or not something is complete!
-    tbl.boolean("complete").notNullable();
+    tbl.text("complete");
   });
 };
 

@@ -21,7 +21,7 @@ exports.up = function(knex, Promise) {
     tbl.text("notes");
     // a flag to tell us whether or not something is complete!
 
-    tbl.boolean("complete").notNullable();
+    tbl.text("complete");
   });
 };
 

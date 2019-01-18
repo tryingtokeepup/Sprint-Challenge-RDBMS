@@ -12,7 +12,7 @@ exports.seed = function(knex, Promise) {
           notes:
             "Might want to keep the extra files for testing to learn how to test.",
           project_id: 1,
-          complete: false
+          complete: "false"
         },
         {
           name: "build out Redux actions and store",
@@ -21,7 +21,7 @@ exports.seed = function(knex, Promise) {
           notes:
             "We should keep it simple, though. One actions file, one reducer, and don't clutter it with unnecessary conditions. That killed me last time.",
           project_id: 1,
-          complete: false
+          complete: "false"
         },
         {
           name: "Build out our components hierarchy",
@@ -30,7 +30,7 @@ exports.seed = function(knex, Promise) {
           notes:
             "I REALLY need to get better at lifecycle methods. Should test my abilities with a search bar and whatnot.",
           project_id: 1,
-          complete: false
+          complete: "false"
         }
       ]);
     });
